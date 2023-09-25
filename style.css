@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #eeeded;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar img{
+    height: 4vw;
+}
+
+.navbar {
+    padding: 25px 0px;
+}
+
+.bgcolor.scrolled.navbar {
+    padding: 15px 0px;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.bgcolor.scrolled.navbar-light .navbar-brand {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    letter-spacing: 1px;
+    margin: 0px 10px;
+    color: #fff;
+}
+
+.bgcolor.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: rgba(223, 238, 238, 0.8);
+    transition: 0.5s ease-in;
+    border-bottom: none;
+}
+
+.bgcolor.scrolled.navbar-light .navbar-nav .nav-link.active {
+    color: #000;
+}
+
+.hero {
+    position: relative;
+    margin: 20px 20px;
+    border-radius: 15px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.6) url("IMG_1141.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+.hero h1 {
+    font-size: 14vw;
+    margin-bottom: 0px;
+    font-weight: 700;
+    line-height: 12vw;
+    letter-spacing: 20px;
+    color: transparent;
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.hero h5 {
+    font-weight: 400;
+    font-size: 1.8vw;
+    letter-spacing: .5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero .btn {
+    padding: 8px 30px;
+}
+
+.tours {
+    position: relative;
+    margin: 20px 20px;
+    border-radius: 15px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #fed6e3 0vh, #a8edea 100vh);
+}
+
+.tours h1 {
+    font-size: 7vw;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-family: 'Allura', cursive;
+}
+
+.tours .logo {
+    position: absolute;
+    translate: -50% -50%;
+    right: 3%;
+    top: 45%;
+}
+
+.tours .logo img {
+    width: 10vw;
+}
+
+.tours .logo-2 {
+    position: absolute;
+    translate: -50% -50%;
+    left: 11%;
+    bottom: 10%;
+}
+
+.tours .logo-2 img {
+    width: 18vw;
+}
+
+.tours p {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.tours span {
+    font-weight: 500;
+}
+
+.about {
+    position: relative;
+    height: auto;
+    margin: 20px 20px;
+    border-radius: 15px;
+    padding: 80px 0px;
+    background-image: linear-gradient(to top, #a8edea 0vh, #fed6e3 100vh);
+}
+
+.about .abt-img{
+    background: rgba(0, 0, 0, 0.3) url("https://images.unsplash.com/photo-1548283571-a1f2e974fbf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    border-radius: 15px;
+}
+
+.about .abt-cnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(17, 12, 46, 0.10) 0px 48px 100px 0px;
+    padding: 50px 60px;
+}
+
+.about h1 {
+    font-size: 6vw;
+    margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 6vw;
+    font-family: 'Allura', cursive;
+}
+
+.about p {
+    font-weight: 400;
+    font-size: 1.4vw;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.about img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.10) 0px 48px 100px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.tour-2 {
+    position: relative;
+    height: auto;
+    margin: 20px 20px;
+    border-radius: 15px;
+    padding: 80px 0px;
+    background-image: linear-gradient(to top, #fed6e3 0vh, #a8edea 100vh);
+}
+
+.tour-2 h1 {
+    font-size: 8vw;
+    margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 6vw;
+    font-family: 'Allura', cursive;
+}
+
+.tour-2 p {
+    font-weight: 300;
+    font-size: 1.3vw;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.tour-2 .image {
+    height: 100%;
+    width: 100%;
+}
+
+.tour-2 .image img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    object-fit: cover;
+    object-position: center;
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tour-2 h2 {
+    font-size: 2.2vw;
+    font-weight: 400;
+}
+
+.tour-2 p {
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+.tour-2 .cnt-1 {
+    position: absolute;
+    translate: -50% -50%;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    top: 80%;
+    left: 20%;
+    background-color: rgba(223, 238, 238, 0.87);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+}
+
+.tour-2 .cnt-2 {
+    position: absolute;
+    translate: -50% -50%;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    top: 80%;
+    left: 50%;
+    background-color: rgba(223, 238, 238, 0.87);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+}
+
+.tour-2 .cnt-3 {
+    position: absolute;
+    translate: -50% -50%;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    top: 80%;
+    left: 80%;
+    background-color: rgba(223, 238, 238, 0.87);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+}
+
+.tour-3 {
+    position: relative;
+    padding: 40px 0px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    height: auto;
+    background-image: linear-gradient(to bottom, #fed6e3 0vh, #a8edea 100vh);
+}
+
+.tour-3 h2 {
+    font-size: 2vw;
+}
+
+.tour-3 p {
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+.gallery {
+    position: relative;
+    height: auto;
+    margin: 20px 20px;
+    border-radius: 15px;
+    padding: 80px 0px;
+    background-image: linear-gradient(to bottom, #a8edea 0vh, #fed6e3 100vh);
+}
+
+.gallery h1 {
+    font-size: 6.5vw;
+    margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 6vw;
+    font-family: 'Allura', cursive;
+}
+
+.gallery .carousel {
+    margin: 60px 0px;
+}
+
+.gallery .carousel img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.contact {
+    position: relative;
+    margin: 20px 20px 0px 20px;
+    border-radius: 15px;
+    height: auto;
+    padding: 60px 0px;
+    background-image: linear-gradient(to bottom, #fed6e3 0vh, #a8edea 100vh);
+}
+
+.contact h1 {
+    font-size: 6vw;
+    margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 6vw;
+    font-family: 'Allura', cursive;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #414040;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 25px;
+    line-height: 1;
+    opacity: .75;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width:1024px) {
+    .tour-2 .cnt-1 {
+        left: 17.5%;
+    }
+
+    .tours .logo-2 img {
+        width: 14vw;
+    }
+
+    .tour-2 .cnt-2 {
+        left: 50%;
+    }
+
+    .tour-2 .cnt-3 {
+        left: 82.5%;
+    }
+
+    .tours h1 {
+        font-size: 9vw;
+    }
+
+    .tours p {
+        font-size: 2vw;
+    }
+
+    .tours .logo {
+        right: -3%;
+    }
+
+    .tours .logo-2 {
+        left: 10%;
+        bottom: 7%;
+    }
+
+    .about h1 {
+        font-size: 8vw;
+    }
+
+    .about p {
+        font-size: 1.7vw;
+    }
+
+    .tour-2 h1 {
+        font-size: 10vw;
+    }
+
+    .tour-3 h2 {
+        font-size: 2.5vw;
+    }
+
+    .tour-3 p {
+        font-size: 1.5vw;
+    }
+
+    .gallery h1 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 252, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, .55);
+        border: none;
+    }
+
+    .bgcolor.scrolled.navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+
+    .contact h1 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 252, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, .55);
+        border: none;
+    }
+
+    .bgcolor.scrolled.navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar {
+        padding: 30px 10px 30px 20px;
+    }
+
+    .navbar img{
+        height: 13vw;
+    }
+
+    .hero {
+        height: 80vh;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .hero h1 {
+        font-size: 15vw;
+        line-height: 17vw;
+        letter-spacing: 15px;
+    }
+
+    .hero h5 {
+        font-weight: 400;
+        font-size: 3.5vw;
+    }
+
+    .tours {
+        height: 40vh;
+        margin: 20px 0px;
+        border-radius: 0px;
+    }
+
+    .tours h1 {
+        font-size: 12vw;
+    }
+
+    .tours p {
+        font-size: 4vw;
+        text-align: justify;
+        font-weight: 500;
+    }
+
+    .tours .logo-2 {
+        left: 12%;
+        bottom: -10%;
+    }
+
+    .tours .logo {
+        right: 5%;
+        top: 15%;
+    }
+
+    .tours .logo img {
+        width: 13vw;
+    }
+
+    .about {
+        margin: 20px 0px;
+        border-radius: 0px;
+        height: auto;
+    }
+
+    .about .abt-cnt{
+        padding: 50px 20px;
+    }
+
+    .about .abt-img{
+        border-radius: 0px;
+    }
+
+    .about h1 {
+        font-size: 12vw;
+    }
+
+    .about p {
+        font-size: 4vw;
+    }
+
+    .tour-2 {
+        margin: 20px 0px;
+        border-radius: 0px;
+        height: auto;
+    }
+
+    .tour-2 h1 {
+        font-size: 18vw;
+        margin-bottom: 15px;
+    }
+
+    .tour-2 h2 {
+        font-size: 7vw;
+    }
+
+    .tour-2 p {
+        font-size: 3.3vw;
+    }
+
+    .tour-2 .cnt-1 {
+        width: 85%;
+        top: 22%;
+        left: 50%;
+    }
+
+    .tour-2 .cnt-2 {
+        width: 85%;
+        top: 50%;
+        left: 50%;
+    }
+
+    .tour-2 .cnt-3 {
+        width: 85%;
+        top: 80%;
+        left: 50%;
+    }
+
+    .tour-3 {
+        margin: 20px 0px;
+        border-radius: 0px;
+        height: auto;
+    }
+
+    .tour-3 h2 {
+        font-size: 7.5vw;
+    }
+
+    .tour-3 p {
+        font-size: 3.5vw;
+    }
+
+    .gallery {
+        margin: 20px 0px;
+        border-radius: 0px;
+        height: auto;
+    }
+
+    .gallery h1 {
+        font-size: 13vw;
+    }
+
+    .gallery .carousel img {
+        border-radius: 0px;
+    }
+
+    .contact {
+        margin: 20px 0px;
+        border-radius: 0px;
+        height: auto;
+    }
+
+    .contact h1 {
+        font-size: 12vw;
+    }
+}
